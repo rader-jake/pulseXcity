@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Header from '../components/Header';
+import Image from 'next/image';
 
 export default function CreateEventPage() {
   const [step, setStep] = useState(1);
@@ -60,7 +61,7 @@ const handleFlyerChange = (e) => {
     className="block w-full text-sm text-white file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-semibold file:bg-white/10 file:text-white hover:file:bg-white/20 transition"
   />
   {flyer && (
-    <img
+    <Image width={800} height={600}
       src={flyer}
       alt="Flyer Preview"
       className="mt-4 rounded-xl w-full object-cover max-h-[300px] border border-white/10 shadow-lg"

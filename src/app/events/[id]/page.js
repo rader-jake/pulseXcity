@@ -2,6 +2,7 @@
 import { useParams } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import Image from 'next/image';
 import Header from '@/app/components/Header';
 
 export default function EventDetailPage() {
@@ -79,7 +80,7 @@ export default function EventDetailPage() {
           transition={{ duration: 0.6 }}
           className="relative w-full h-[60vh] rounded-2xl overflow-hidden shadow-xl mb-10"
         >
-          <img src={event.image} alt={event.name} className="object-cover w-full h-full" />
+          <Image src={event.image} alt={event.name} className="object-cover w-full h-full" width={800} height={600}/>
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
           <div className="absolute bottom-6 left-6 text-white">
             <h1 className="text-4xl font-bold mb-2 drop-shadow-lg">{event.name}</h1>
@@ -119,7 +120,7 @@ export default function EventDetailPage() {
                 className="flex flex-col items-center justify-center"
               >
                 <div className="relative w-20 h-20 rounded-full overflow-hidden">
-                  <img
+                  <Image width={800} height={600}
                     src={attendee.profileImage}
                     alt={attendee.name}
                     className="object-cover w-full h-full"
@@ -155,8 +156,8 @@ export default function EventDetailPage() {
             >
               {submitted ? (
                 <div className="text-center text-white space-y-4">
-                  <h2 className="text-2xl font-semibold">You're in!</h2>
-                  <p>We'll see you at {event.name} 🎉</p>
+                  <h2 className="text-2xl font-semibold">Youre in!</h2>
+                  <p>Well see you at {event.name} 🎉</p>
                   <button
                     className="mt-4 text-orange-500 underline"
                     onClick={() => {
