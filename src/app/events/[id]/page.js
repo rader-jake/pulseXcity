@@ -109,7 +109,7 @@ export default function EventDetailPage() {
 
 {/* Who's Going Section */}
 <div className="mt-12">
-          <h2 className="text-2xl text-white font-semibold mb-6">Who's Going</h2>
+          <h2 className="text-2xl text-white font-semibold mb-6">Whos Going</h2>
           <div className="grid grid-cols-4 gap-6">
             {attendees.map((attendee) => (
               <motion.div
