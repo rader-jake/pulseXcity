@@ -1,5 +1,13 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import '@fontsource/space-grotesk';
+import '@fontsource/orbitron';
+import '@fontsource/monoton';
+import '@fontsource/pacifico';
+import '@fontsource/merriweather';
+import '@fontsource/anton';
+
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",

@@ -9,10 +9,21 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fontsource/anton": "^5.2.5",
+    "@fontsource/bebas-neue": "^5.2.5",
+    "@fontsource/dancing-script": "^5.2.5",
+    "@fontsource/merriweather": "^5.2.6",
+    "@fontsource/monoton": "^5.2.5",
+    "@fontsource/orbitron": "^5.2.5",
+    "@fontsource/pacifico": "^5.2.5",
+    "@fontsource/playfair-display": "^5.2.5",
+    "@fontsource/space-grotesk": "^5.2.6",
+    "canvas-confetti": "^1.9.3",
     "mapbox-gl": "^3.11.0",
     "motion": "^12.7.4",
     "next": "15.3.1",
     "react": "^19.0.0",
+    "react-confetti": "^6.4.0",
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
