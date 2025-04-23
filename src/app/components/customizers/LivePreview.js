@@ -26,6 +26,7 @@ export default function LivePreview({ formData, font, bgPreset, bgVideo, flyer }
       autoPlay
       muted
       loop
+      playsInline
       className="absolute inset-0 w-full h-full object-cover z-0"
     />
   )}
